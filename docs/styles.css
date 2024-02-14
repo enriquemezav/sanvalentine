@@ -1,0 +1,110 @@
+body {
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.corazon {
+  position: relative;
+  /*height: 200px;*/
+  width: 200px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #000;
+
+}
+
+.flower-image {
+  width: 100%;
+  /*height: 100%;*/
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.zoom-animation {
+  animation: pulsate 2s infinite;
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1.5);
+  }
+
+  50% {
+    transform: scale(1.6);
+  }
+
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+.text-above,
+.text-below {
+  width: 100%;
+  font-weight: bolder;
+  position: absolute;
+  text-align: center;
+  color: #fff;
+
+}
+
+.fasteracademy {
+  position: absolute;
+  text-align: center;
+  color: #ffffff78;
+  font-size: 40px;
+  top: 45px;
+}
+
+.text-above {
+  font-size: 45px;
+  top: -180px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* Cambia la lista de fuentes según tus preferencias */
+
+}
+
+.text-below {
+
+  bottom: -100px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+
+}
+
+.hola {
+  width: 0%;
+}
+
+audio {
+  text-align: center;
+  width: 100%;
+  height: 25px;
+  position: absolute;
+  bottom: -150px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.text-below-custom {
+  font-family: "Latin Modern Roman";
+  font-style: oblique;
+  /* Cambia 'Arial' por la fuente que desees */
+  font-size: 24px;
+  /* Cambia el tamaño de la fuente según tus preferencias */
+  text-align: center;
+  color: #ffffff;
+  /* Cambia el color del texto si lo deseas */
+  position: absolute;
+  bottom: -105px;
+  /* Ajusta la posición vertical según sea necesario */
+  width: 100%;
+}
